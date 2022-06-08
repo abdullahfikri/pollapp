@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/et_emailreg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:hint="email"/>
+
+        <EditText
+            android:id="@+id/et_passwordreg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="password"/>
+        <EditText
+            android:id="@+id/et_namalengkapreg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="nama lengkap"/>
+        <EditText
+            android:id="@+id/et_nikreg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="nik"/>
+        <EditText
+            android:id="@+id/et_tempattinggalreg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="tempat tinggal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="80dp"
+                android:text="upload Image" />
+
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_person"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"/>
+
+        <Button
+            android:id="@+id/btn_loginreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign in"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
