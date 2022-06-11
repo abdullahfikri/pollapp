@@ -13,7 +13,11 @@ import com.example.vottingapp.R;
 public class ProfilUser extends AppCompatActivity {
     TextView tv_email, tv_nik, tv_namalengkap, tv_statusvoting, tv_img;
     ImageView image;
+    String id;
 
+    public String getId() {
+        return id;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

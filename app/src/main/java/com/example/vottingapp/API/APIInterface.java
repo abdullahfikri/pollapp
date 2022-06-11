@@ -2,12 +2,15 @@ package com.example.vottingapp.API;
 
 import com.example.vottingapp.Model.login.ResponseLogin;
 import com.example.vottingapp.Model.register.ResponseRegister;
+import com.example.vottingapp.Model.viewkandidat.ResponseViewKandidat;
+import com.example.vottingapp.Model.viewkandidatinfo.ResponseKandidatInfo;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
@@ -31,4 +34,13 @@ public interface APIInterface {
             @Part("tempattinggal") RequestBody tempattinggal,
             @Part MultipartBody.Part image
             );
+
+    @GET("viewvote.php")
+    Call<ResponseViewKandidat> viewKandidat();
+
+    @FormUrlEncoded
+    @POST("viewkandidatinfo.php")
+    Call<ResponseKandidatInfo>  viewKandidatInfo(
+            @Field("id_kandidat") String id
+    );
 }

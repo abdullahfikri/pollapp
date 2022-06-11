@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_view_kandidat);
         apiInterface = RetrofitServer.connectRetrofit().create(APIInterface.class);
 
         et_email = findViewById(R.id.et_emailreg);
