@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">vottingapp</string>
+    <string name="lupa_kata_sandi">Lupa kata sandi?</string>
+    <string name="kata_sandi">Kata sandi</string>
+    <string name="nama">Nama</string>
+    <string name="loggedin">loggedIn</string>
+    <string name="daftar">Daftar</string>
+    <string name="email">Email</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="tempat_tinggal">Tempat Tinggal</string>
+    <string name="nomor_induk_kependudukan">Nomor Induk Kependudukan</string>
+    <string name="kata_kata">Jika Anda Tidak Memilih, Anda Kehilangan Untuk Mengeluh. Maka Pilihlah Suara sesuai dengan keinginanmu !</string>
+    <string name="make_your_choice">Make Your Choice</string>
+    <string name="text_gubernur"><![CDATA[Pemilihan Gubernur Akan Berlangsung hingga 21 April 2022 Pilihlah Sesuai dengan Visi & Misi yang kamu inginkan !]]></string>
+    <string name="textbupati"><![CDATA[Pemilihan Bupati Akan Berlangsung hingga 21 Juni 2022 Pilihlah Sesuai dengan Visi & Misi yang kamu inginkan !]]></string>
+    <string name="text_walikota"><![CDATA[Pemilihan Walikota Akan Berlangsung hingga 21 Mei 2022 Pilihlah Sesuai dengan Visi & Misi yang kamu inginkan !]]></string>
+    <string name="btn_home">Salam Satu Suara !! Pasti</string>
 </resources>

@@ -1,14 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity.ViewKandidatActivity">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_kandidat"
+    <RelativeLayout
+        android:background="@drawable/bg__"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/card_item" />
-</RelativeLayout>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_makeyc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/make_your_choice"
+            android:textAlignment="center"
+            android:textColor="#6A89FE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_quotes"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_makeyc"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="109dp"
+            android:text="@string/kata_kata"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_kandidat"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:layout_below="@id/tv_quotes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="55dp"
+            tools:itemCount="3"
+            tools:listitem="@layout/card_kandidat" />
+
+        <ImageButton
+            android:id="@+id/viewkandidat_ib_home"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_quotes"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="565dp"
+            android:background="@drawable/btn_home_active" />
+
+        <ImageButton
+            android:id="@+id/viewkandidat_ib_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_quotes"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="565dp"
+            android:background="@drawable/btn_hasil" />
+
+        <ImageButton
+            android:id="@+id/viewkandidat_ib_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_quotes"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="239dp"
+            android:layout_marginTop="565dp"
+            android:background="@drawable/btn_berita">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/viewkandidat_ib_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_quotes"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="329dp"
+            android:layout_marginTop="565dp"
+            android:background="@drawable/btn_user">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Activity.ViewKandidatActivity">-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_kandidat"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:listitem="@layout/card_item" />-->
+<!--</RelativeLayout>-->

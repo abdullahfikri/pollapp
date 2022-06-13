@@ -1,9 +1,11 @@
 package com.example.vottingapp.API;
 
+import com.example.vottingapp.Model.hasilvoting.ResponseHasilVote;
 import com.example.vottingapp.Model.login.ResponseLogin;
 import com.example.vottingapp.Model.register.ResponseRegister;
 import com.example.vottingapp.Model.viewkandidat.ResponseViewKandidat;
 import com.example.vottingapp.Model.viewkandidatinfo.ResponseKandidatInfo;
+import com.example.vottingapp.Model.voting.ResponseVoting;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -32,6 +34,7 @@ public interface APIInterface {
             @Part("namalengkap") RequestBody namalengkap,
             @Part("nik") RequestBody nik,
             @Part("tempattinggal") RequestBody tempattinggal,
+            @Part("nomorhp") RequestBody nomorhp,
             @Part MultipartBody.Part image
             );
 
@@ -43,4 +46,14 @@ public interface APIInterface {
     Call<ResponseKandidatInfo>  viewKandidatInfo(
             @Field("id_kandidat") String id
     );
+
+    @FormUrlEncoded
+    @POST("pemilih.php")
+    Call<ResponseVoting> voting(
+            @Field("id_kandidat") String id_kandidat,
+            @Field("id_user") String id_user
+    );
+
+    @GET("gethasilpemilih.php")
+    Call<ResponseHasilVote> viewHasilVoting();
 }

@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.vottingapp.API.APIInterface;
@@ -15,6 +17,7 @@ import com.example.vottingapp.API.RetrofitServer;
 import com.example.vottingapp.Model.login.ResponseLogin;
 import com.example.vottingapp.Model.login.Data;
 import com.example.vottingapp.R;
+import com.example.vottingapp.utils.SessionManager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,7 +28,7 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.btn_login)
-    Button login;
+    ImageButton login;
 
     @BindView(R.id.et_email)
     EditText et_email;
@@ -33,8 +36,11 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.et_password)
     EditText et_password;
 
-    APIInterface apiInterface;
+    @BindView(R.id.tv_register)
+    TextView tv_register;
 
+    APIInterface apiInterface;
+    SessionManager sessionUser;
     private static final String TAG = "LoginActivity";
 
 
@@ -44,11 +50,18 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         apiInterface = RetrofitServer.connectRetrofit().create(APIInterface.class);
-
+        sessionUser = new SessionManager(this);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 loginUser();
+            }
+        });
+        tv_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -64,15 +77,13 @@ public class LoginActivity extends AppCompatActivity {
                 String status = response.body().getStatus();
 
                 if (status.equals("success")){
+
                     Data userData = response.body().getData();
 
-                    Intent intent = new Intent(LoginActivity.this, ProfilUser.class);
+                    sessionUser.createLoginSession(userData);
+                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
-                    intent.putExtra("email",userData.getEmail());
-                    intent.putExtra("nik",userData.getNik());
-                    intent.putExtra("namalengkap",userData.getNamalengkap());
-                    intent.putExtra("statusvoting",userData.getStatusvoting());
-                    intent.putExtra("imgurl",userData.getImgurl());
+
                     startActivity(intent);
                     finish();
                 } else {

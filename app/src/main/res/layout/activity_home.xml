@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.HomeActivity">
+
+    <RelativeLayout
+
+
+        android:background="@drawable/template"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="27dp"
+            android:drawableEnd="@drawable/ic_search"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv_berlangsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_search"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="220dp"
+            android:text="Sedang Berlangsung"
+            android:textColor="#E81212">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_pemilihangub"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_berlangsung"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="94dp"
+            android:text="Pemilihan Gubernur"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_isipemgub"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pemilihangub"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="41dp"
+            android:text="@string/text_gubernur"
+            android:textColor="#000000"
+            android:textSize="11dp">
+
+        </TextView>
+
+
+        <ImageButton
+            android:id="@+id/home_iv_gubernur"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_below="@id/tv_isipemgub"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="186dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="62dp"
+            android:background="@drawable/btn_tersedia">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_segera"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_iv_gubernur"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="296dp"
+            android:text="Segera !"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_pemilihanwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_segera"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="103dp"
+            android:text="Pemilihan Walikota"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_isipemwal"
+            android:layout_width="194dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/tv_pemilihanwal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="33dp"
+            android:text="@string/text_walikota"
+            android:textColor="#000000"
+            android:textSize="11dp">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_tdk2"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_below="@id/tv_isipemwal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="51dp"
+            android:background="@drawable/btn_tidaktersedia">
+
+        </ImageButton>
+
+
+        <TextView
+            android:id="@+id/tv_pemilihanbup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_tdk2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="106dp"
+            android:text="Pemilihan Bupati"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_isipembup"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pemilihanbup"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="44dp"
+            android:text="@string/textbupati"
+            android:textColor="#000000"
+            android:textSize="11dp">
+
+        </TextView>
+
+
+        <ImageButton
+            android:id="@+id/btn_tdk3"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_below="@id/tv_isipembup"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="183dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="66dp"
+            android:background="@drawable/btn_tidaktersedia">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_salam"
+            android:layout_width="228dp"
+            android:layout_height="57dp"
+            android:layout_below="@id/btn_tdk3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="91dp"
+            android:text="@string/btn_home"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/home_iv_berita_satu"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/btn_tdk3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="31dp"
+            android:background="@drawable/berita1">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/home_iv_berita_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@id/btn_tdk3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="277dp"
+            android:background="@drawable/berita2">
+
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/home_iv_home"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_iv_berita_dua"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/btn_home_active">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/home_iv_hasilvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_iv_berita_dua"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/btn_hasil">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/home_iv_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_iv_berita_dua"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="237dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/btn_berita">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/home_iv_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_iv_berita_dua"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="334dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/btn_user">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+</LinearLayout>

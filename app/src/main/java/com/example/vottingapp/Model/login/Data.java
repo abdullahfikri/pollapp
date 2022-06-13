@@ -21,6 +21,9 @@ public class Data {
     @SerializedName("namalengkap")
     @Expose
     private String namalengkap;
+    @SerializedName("nomorhp")
+    @Expose
+    private String nomorhp;
     @SerializedName("statusvoting")
     @Expose
     private String statusvoting;
@@ -69,6 +72,14 @@ public class Data {
 
     public void setNamalengkap(String namalengkap) {
         this.namalengkap = namalengkap;
+    }
+
+    public String getNomorhp() {
+        return nomorhp;
+    }
+
+    public void setNomorhp(String nomorhp) {
+        this.nomorhp = nomorhp;
     }
 
     public String getStatusvoting() {

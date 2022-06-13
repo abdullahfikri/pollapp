@@ -4,16 +4,32 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.233" />
+        <entry key="app/src/main/res/drawable/bg3.xml" value="0.226" />
+        <entry key="app/src/main/res/drawable/bg4.xml" value="0.226" />
+        <entry key="app/src/main/res/drawable/bg5.xml" value="0.226" />
+        <entry key="app/src/main/res/drawable/ic_baseline_android_24.xml" value="0.187" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.233" />
         <entry key="app/src/main/res/drawable/ic_person.xml" value="0.233" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.226" />
+        <entry key="app/src/main/res/drawable/logout.xml" value="0.176" />
+        <entry key="app/src/main/res/drawable/menu.xml" value="0.176" />
+        <entry key="app/src/main/res/drawable/rounded.xml" value="0.1895" />
+        <entry key="app/src/main/res/drawable/rounded_et.xml" value="0.226" />
+        <entry key="app/src/main/res/layout/activity_berita.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_hasil_voting.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_kandidat.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.30648148148148147" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.159375" />
+        <entry key="app/src/main/res/layout/activity_menu_hasil_voting.xml" value="0.27393162393162396" />
         <entry key="app/src/main/res/layout/activity_profil_user.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/activity_profile_user.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_view_kandidat.xml" value="0.17870884993587002" />
+        <entry key="app/src/main/res/layout/activity_tentang_kami.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_view_kandidat.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2740487387772552" />
         <entry key="app/src/main/res/layout/card_item.xml" value="0.2740487387772552" />
-        <entry key="app/src/main/res/layout/card_kandidat.xml" value="0.2731936725096195" />
+        <entry key="app/src/main/res/layout/card_kandidat.xml" value="0.5" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1685" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1685" />
         <entry key="app/src/main/res/xml/network_security_config.xml" value="0.1" />

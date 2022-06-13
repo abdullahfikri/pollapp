@@ -28,8 +28,8 @@ public class KandidatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kandidat);
-        iv_cagub = findViewById(R.id.kandidat_iv_cagub);
-        iv_wagub = findViewById(R.id.kandidat_iv_wagub);
+        iv_cagub = findViewById(R.id.infokandidat_iv_cagub);
+        iv_wagub = findViewById(R.id.infokandidat_iv_wagub);
 
         // Cagub section
         tv_namacagub = findViewById(R.id.infokandidat_tv_cagubnama);

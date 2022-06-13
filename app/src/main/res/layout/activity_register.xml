@@ -1,78 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.RegisterActivity">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
-        <EditText
-            android:id="@+id/et_emailreg"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="textEmailAddress"
-            android:hint="email"/>
+    android:orientation="vertical"
+    tools:context=".Activity.RegisterActivity"
+    android:background="@drawable/bg_register">
 
-        <EditText
-            android:id="@+id/et_passwordreg"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            android:hint="password"/>
-        <EditText
-            android:id="@+id/et_namalengkapreg"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="nama lengkap"/>
-        <EditText
-            android:id="@+id/et_nikreg"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="nik"/>
-        <EditText
-            android:id="@+id/et_tempattinggalreg"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="tempat tinggal"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/btn_upload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="50dp"
-                android:layout_marginTop="80dp"
-                android:text="upload Image" />
 
-            <ImageView
-                android:id="@+id/iv_upload"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/ic_person"/>
+    <EditText
+        android:id="@+id/et_emailreg"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="235dp"
+        android:background="@drawable/rounded_et"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+    <EditText
+        android:id="@+id/et_passwordreg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_et"
+        android:hint="Kata Sandi"
+        android:textAlignment="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <EditText
+        android:id="@+id/et_namalengkapreg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_et"
+        android:hint="Nama Lengkap"
+        android:textAlignment="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+    <EditText
+        android:id="@+id/et_nikreg"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_et"
+        android:hint="@string/nomor_induk_kependudukan"
+        android:textAlignment="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+    <EditText
+        android:id="@+id/et_tempattinggalreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:height="49dp"
+        android:background="@drawable/rounded_et"
+        android:hint="@string/tempat_tinggal"
+        android:textAlignment="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+    <EditText
+        android:id="@+id/et_nomorhpreg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:inputType="phone"
+        android:background="@drawable/rounded_et"
+        android:hint="@string/nomor_handphone"
+        android:textAlignment="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+    <ImageButton
+        android:id="@+id/btn_upload"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/camera"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_daftar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="center"
+        />
+
         </LinearLayout>
+    </ScrollView>
 
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Register"/>
-
-        <Button
-            android:id="@+id/btn_loginreg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="sign in"/>
-
-
-    </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

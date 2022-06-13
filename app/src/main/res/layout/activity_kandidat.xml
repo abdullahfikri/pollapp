@@ -5,85 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.KandidatActivity"
-    android:orientation="vertical"
-    android:padding="20dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Profile Kandidat"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:textStyle="bold" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:visibility="visible">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-
-
-            <LinearLayout
+    android:background="@drawable/bgprofilecalon"
+    android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Profile Kandidat"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#6A89FE"
+                android:padding="10dp"
+                android:background="@drawable/bg4"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="328dp"
+                android:layout_height="298dp"
+                android:layout_marginTop="24dp"
+                android:padding="20dp"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:background="@drawable/bg3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="7dp">
 
                     <ImageView
-                        android:id="@+id/kandidat_iv_cagub"
-                        android:layout_width="120dp"
+                        android:id="@+id/infokandidat_iv_cagub"
+                        android:layout_width="103dp"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10dp" />
+                        android:background="@drawable/bg5"/>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="15dp"
-                            android:text="Gubernur"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
 
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="#6A89FE"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/white"
+                            android:text="Gubernur"
+                            />
                         <TextView
                             android:id="@+id/infokandidat_tv_cagubnama"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="May Sra Handika"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
                             android:textAlignment="center"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <LinearLayout
+                            android:layout_marginStart="20dp"
+                            android:padding="6dp"
+                            android:text="nama cagub"
+                            android:background="@color/white"/>
+                        <TextView
+                            android:id="@+id/infokandidat_tv_cagubttl"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:text="TTL :"
-                                android:textSize="16dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/infokandidat_tv_cagubttl"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Ujung Batu, 3 Mei 2002"
-                                android:textSize="16dp" />
-
-                        </LinearLayout>
+                            android:layout_height="wrap_content"
+                            android:text="TTL : test test"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/white"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -91,144 +88,403 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginEnd="5dp"
-                                android:text="Riwayat Pendidikan:"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:text="Riwayat Pendidikan :"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"/>
 
                             <TextView
                                 android:id="@+id/infokandidat_tv_cagubpendidikan"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
                                 android:text="Sarjana Teknik Di Universitas Negeri Sultan Syarif Kasim Riau"
-                                android:textSize="16sp" />
-
+                                android:textSize="12sp" />
                         </LinearLayout>
-
                     </LinearLayout>
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:text="Biografi Singkat:"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/infokandidat_tv_cagubbio"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bernama Asli May Sra Handika, beliau merupakan lulusan sarjana Teknik Informatika di Salah Satu Universitas Negeri Pekanbaru. Semasa kecilnya, beliau menghabiskan waktu dikampung halaman yaitu daerah ujung batu. Beliau juga merupakan seorang desain grafis pada bidangnya, dan sudah banyak mengikuti berbagai kepanitian mengenai desain disaat menempuh pendidikan. Hingga kini beliau sudah menghasilkan banyak anak perusahaan berbau desain dengan kekayaan sebannyak 1 milyar rupiah."
-                    android:textSize="15dp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biografi Singkat :"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:id="@+id/tvbiograficagub"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/infokandidat_tv_cagubbio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sarjana Teknik Di Universitas Negeri Sultan Syarif Kasim Riau"
+                        android:textSize="12sp" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!--        wagub-->
             <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="328dp"
+                android:layout_height="298dp"
+                android:layout_marginTop="24dp"
+                android:padding="20dp"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:background="@drawable/bg3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="7dp">
 
                     <ImageView
-                        android:id="@+id/kandidat_iv_wagub"
-                        android:layout_width="120dp"
+
+                        android:layout_width="103dp"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10dp" />
+                        android:background="@drawable/bg5"
+                        android:id="@+id/infokandidat_iv_wagub"/>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="15dp"
-                            android:text="Wakil Gubernur"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
 
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14dp"
+                            android:textColor="#6A89FE"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/white"
+                            android:text="Wakil Gubernur"/>
                         <TextView
                             android:id="@+id/infokandidat_tv_wagubnama"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Sari Amanda"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:text="Nama Wagub"
                             android:textAlignment="center"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <LinearLayout
+                            android:layout_marginStart="20dp"
+                            android:padding="6dp"
+                            android:background="@color/white"/>
+                        <TextView
+                            android:id="@+id/infokandidat_tv_wagubttl"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="5dp"
-                                android:text="TTL :"
-                                android:textSize="16dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/infokandidat_tv_wagubttl"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Pariaman, 13 Agustus 2002"
-                                android:textSize="16dp" />
-
-                        </LinearLayout>
-
+                            android:layout_height="wrap_content"
+                            android:text="TTL : "
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_marginStart="20dp"
+                            android:background="@color/white"/>
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginEnd="5dp"
-                                android:text="Riwayat Pendidikan:"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
+                                android:text="Riwayat Pendidikan :"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:background="@color/white"/>
 
                             <TextView
                                 android:id="@+id/infokandidat_tv_wagubpendidikan"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
                                 android:text="Sarjana Teknik Di Universitas Negeri Sultan Syarif Kasim Riau"
-                                android:textSize="16sp" />
-
+                                android:textSize="12sp" />
                         </LinearLayout>
-
                     </LinearLayout>
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:text="Biografi Singkat:"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/infokandidat_tv_wagubbio"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bernama Asli Sari Amanda Putri, beliau merupakan lulusan sarjana Teknik Informatika dari pelalawan university. Semasa kecilnya, beliau menghabiskan waktu didaerah pangkalan kerinci hingga saat ini. Beliau juga merupakan seorang programmer dengan bahasa java. Beliau bahkan memiliki prestasi yang sangat cemerlang, memahami berbagai aspek java disaat menempuh pendidikan pada masanya. Saat ini beliau berhasil membuat sekolah robotik dengan bahasa java hingga meraup penghasilan pertahunnya 1,5 milyar rupiah."
-                    android:textSize="15sp" />
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Biografi Singkat :"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:background="@color/white" />
+                    <TextView
+                        android:id="@+id/infokandidat_tv_wagubbio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sarjana Teknik Di Universitas Negeri Sultan Syarif Kasim Riau"
+                        android:textSize="12sp" />
+                </LinearLayout>
             </LinearLayout>
 
-        </LinearLayout>
-    </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg4"
+                android:layout_marginTop="60dp">
+
+                <ImageButton
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="33dp"
+                    android:id="@+id/ibhome"
+                    android:background="@drawable/btn_home_active"
+                    android:layout_height="33dp"/>
+                <ImageButton
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="33dp"
+                    android:id="@+id/ibsuara"
+                    android:background="@drawable/btn_hasil"
+                    android:layout_height="33dp"/>
+
+                <ImageButton
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="33dp"
+                    android:id="@+id/ibnews"
+                    android:background="@drawable/btn_berita"
+                    android:layout_height="33dp"/>
+
+                <ImageButton
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="33dp"
+                    android:id="@+id/ibakun"
+                    android:background="@drawable/btn_user"
+                    android:layout_height="33dp"/>
+            </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/kandidat_iv_cagub"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginRight="10dp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginBottom="15dp"-->
+<!--                            android:text="Gubernur"-->
+<!--                            android:textSize="20dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/infokandidat_tv_cagubnama"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="May Sra Handika"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textSize="20dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginRight="5dp"-->
+<!--                                android:text="TTL :"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/infokandidat_tv_cagubttl"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Ujung Batu, 3 Mei 2002"-->
+<!--                                android:textSize="16dp" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:text="Riwayat Pendidikan:"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/infokandidat_tv_cagubpendidikan"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Sarjana Teknik Di Universitas Negeri Sultan Syarif Kasim Riau"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:text="Biografi Singkat:"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/infokandidat_tv_cagubbio"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Bernama Asli May Sra Handika, beliau merupakan lulusan sarjana Teknik Informatika di Salah Satu Universitas Negeri Pekanbaru. Semasa kecilnya, beliau menghabiskan waktu dikampung halaman yaitu daerah ujung batu. Beliau juga merupakan seorang desain grafis pada bidangnya, dan sudah banyak mengikuti berbagai kepanitian mengenai desain disaat menempuh pendidikan. Hingga kini beliau sudah menghasilkan banyak anak perusahaan berbau desain dengan kekayaan sebannyak 1 milyar rupiah."-->
+<!--                    android:textSize="15dp" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash;        wagub&ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/kandidat_iv_wagub"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginRight="10dp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginBottom="15dp"-->
+<!--                            android:text="Wakil Gubernur"-->
+<!--                            android:textSize="20dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/infokandidat_tv_wagubnama"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Sari Amanda"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textSize="20dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginRight="5dp"-->
+<!--                                android:text="TTL :"-->
+<!--                                android:textSize="16dp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/infokandidat_tv_wagubttl"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Pariaman, 13 Agustus 2002"-->
+<!--                                android:textSize="16dp" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="vertical">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:text="Riwayat Pendidikan:"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/infokandidat_tv_wagubpendidikan"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Sarjana Teknik Di Universitas Negeri Sultan Syarif Kasim Riau"-->
+<!--                                android:textSize="16sp" />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:text="Biografi Singkat:"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/infokandidat_tv_wagubbio"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Bernama Asli Sari Amanda Putri, beliau merupakan lulusan sarjana Teknik Informatika dari pelalawan university. Semasa kecilnya, beliau menghabiskan waktu didaerah pangkalan kerinci hingga saat ini. Beliau juga merupakan seorang programmer dengan bahasa java. Beliau bahkan memiliki prestasi yang sangat cemerlang, memahami berbagai aspek java disaat menempuh pendidikan pada masanya. Saat ini beliau berhasil membuat sekolah robotik dengan bahasa java hingga meraup penghasilan pertahunnya 1,5 milyar rupiah."-->
+<!--                    android:textSize="15sp" />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
 
 </LinearLayout>

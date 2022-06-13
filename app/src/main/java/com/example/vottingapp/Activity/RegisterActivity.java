@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -37,15 +38,14 @@ import retrofit2.Response;
 public class RegisterActivity extends AppCompatActivity {
     APIInterface apiInterface;
 
-    EditText et_email, et_password, et_namalengkap, et_nik, et_tempattinggal;
-    Button btn_upload, btn_register, btn_loginreg;
-    ImageView iv_upload;
+    EditText et_email, et_password, et_namalengkap, et_nik, et_tempattinggal, et_nomorhp;
+    ImageButton btn_upload, btn_register;
     String path;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_kandidat);
+        setContentView(R.layout.activity_register);
         apiInterface = RetrofitServer.connectRetrofit().create(APIInterface.class);
 
         et_email = findViewById(R.id.et_emailreg);
@@ -53,13 +53,12 @@ public class RegisterActivity extends AppCompatActivity {
         et_namalengkap = findViewById(R.id.et_namalengkapreg);
         et_nik = findViewById(R.id.et_nikreg);
         et_tempattinggal = findViewById(R.id.et_tempattinggalreg);
-
+        et_nomorhp = findViewById(R.id.et_nomorhpreg);
         // Button
         btn_upload = findViewById(R.id.btn_upload);
         btn_register = findViewById(R.id.btn_register);
-        btn_loginreg = findViewById(R.id.btn_loginreg);
 
-        iv_upload = findViewById(R.id.iv_upload);
+//        iv_upload = findViewById(R.id.iv_upload);
 
 
 
@@ -80,11 +79,6 @@ public class RegisterActivity extends AppCompatActivity {
             register();
         });
 
-        btn_loginreg.setOnClickListener(v -> {
-            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-        });
     }
 
     @Override
@@ -95,22 +89,27 @@ public class RegisterActivity extends AppCompatActivity {
             Context context = RegisterActivity.this;
             path = RealPathUtil.getRealPath(context, uri);
             Bitmap bitmap = BitmapFactory.decodeFile(path);
-            iv_upload.setImageBitmap(bitmap);
+            btn_upload.setImageBitmap(bitmap);
+//            iv_upload.setImageBitmap(bitmap);
         }
     }
     // Register
     public void register(){
-        String email, password, namalengkap, nik, tempattinggal;
+        String email, password, namalengkap, nik, tempattinggal, nomorhp;
         email = et_email.getText().toString();
         password = et_password.getText().toString();
         namalengkap = et_namalengkap.getText().toString();
         nik = et_nik.getText().toString();
         tempattinggal = et_tempattinggal.getText().toString();
+        nomorhp = et_nomorhp.getText().toString();
         if (email.trim().equals("") &&
                 password.trim().equals("") &&
                 namalengkap.trim().equals("")  &&
                 nik.trim().equals("") &&
-                tempattinggal.trim().equals("") ){
+                tempattinggal.trim().equals("") &&
+                nomorhp.trim().equals("")
+        ){
+
             Toast.makeText(this, "Data tidak boleh kosong", Toast.LENGTH_SHORT).show();
         }
         if (path == null){
@@ -124,6 +123,7 @@ public class RegisterActivity extends AppCompatActivity {
         RequestBody requestPassword = RequestBody.create(MediaType.parse("multipart/form-data"), password);
         RequestBody requestNamaLengkap = RequestBody.create(MediaType.parse("multipart/form-data"), namalengkap);
         RequestBody requestNik = RequestBody.create(MediaType.parse("multipart/form-data"), nik);
+        RequestBody requestNomorHp = RequestBody.create(MediaType.parse("multipart/form-data"), nomorhp);
         RequestBody requestTempattinggal = RequestBody.create(MediaType.parse("multipart/form-data"), tempattinggal);
 
         apiInterface.register(
@@ -132,6 +132,7 @@ public class RegisterActivity extends AppCompatActivity {
                 requestNamaLengkap,
                 requestNik,
                 requestTempattinggal,
+                requestNomorHp,
                 bodyimg
         ).enqueue(new Callback<ResponseRegister>() {
             @Override
