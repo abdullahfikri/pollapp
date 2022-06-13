@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="170dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded">
+    <TextView
+        android:id="@+id/kandidat_tv_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_kandidat"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#333333"
+            android:src="@drawable/ic_baseline_android_24" />
+
+        <TextView
+            android:id="@+id/kandidat_tv_nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="45dp"
+            android:layout_toEndOf="@+id/iv_kandidat"
+            android:text="No. 1"
+            android:textAlignment="center"
+            android:textColor="#6A89FE"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kandidat_tv_cagub"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kandidat_tv_nomor"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_kandidat"
+            android:text="May Sra Handika"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/kandidat_tv_wagub"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kandidat_tv_cagub"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/iv_kandidat"
+            android:text="Sari Amanda Putri"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/kandidat_btn_info"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/kandidat_tv_wagub"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/btn_info_calon" />
+
+        <ImageButton
+            android:id="@+id/kandidat_btn_select"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/kandidat_btn_info"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/btn_pilih__" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

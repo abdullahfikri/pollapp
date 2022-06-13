@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BeritaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/judul" />
+
+        <ImageView
+            android:id="@+id/pas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/judul"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pas" />
+
+        <ImageView
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pas"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pass" />
+
+        <ImageView
+            android:id="@+id/passs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/passs" />
+        <ImageView
+            android:id="@+id/kata"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/passs"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/kata" />
+
+        <ImageView
+            android:id="@+id/kotak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kata"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/kotak" />
+
+        <ImageButton
+            android:id="@+id/berita_ib_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kata"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="21dp"
+            app:srcCompat="@drawable/home" />
+        <ImageButton
+            android:id="@+id/berita_ib_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kata"
+            android:layout_toRightOf="@+id/berita_ib_home"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="21dp"
+            app:srcCompat="@drawable/hasilvote" />
+
+        <ImageButton
+            android:id="@+id/berita_ib_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kata"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/berita_ib_hasil"
+            app:srcCompat="@drawable/berita" />
+
+        <ImageButton
+            android:id="@+id/berita_ib_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kata"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@+id/berita_ib_berita"
+            app:srcCompat="@drawable/akun" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileUserActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gambar" />
+
+        <ImageView
+            android:id="@+id/profile_iv_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/top"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="61dp"
+            android:src="@drawable/akuun" />
+
+        <TextView
+            android:id="@+id/profile_tv_user"
+            android:layout_marginTop="190dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="181dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="user" />
+
+        <TextView
+            android:id="@+id/profile_tv_email"
+            android:layout_marginTop="220dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user@gmail.com" />
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_tv_email"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/boxx"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@+id/box"
+            android:src="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/gambarr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_ib_logout"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gbr" />
+
+        <TextView
+            android:id="@+id/tvset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_tv_email"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Pengaturan"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_tv_nik"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvset"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu"
+            android:drawableStart="@drawable/ktp"
+            android:padding="7dp"
+            android:text=" Nomor Induk Kependudukan"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_tv_tempattinggal"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profile_tv_nik"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu"
+            android:drawableStart="@drawable/lok"
+            android:text=" Tempat Tinggal"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="7dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_tv_nomorhp"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profile_tv_tempattinggal"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu"
+            android:drawableStart="@drawable/call"
+            android:padding="7dp"
+            android:text=" Nomor Telepon"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_tv_status"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profile_tv_nomorhp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu"
+            android:drawableStart="@drawable/status"
+            android:padding="7dp"
+            android:text=" Status"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_tv_about"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profile_tv_status"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/menu"
+            android:drawableStart="@drawable/about"
+            android:text=" Tentang Kami"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="7dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/profile_ib_logout"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/profile_tv_about"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_exit"
+            android:drawableStart="@drawable/logout"
+            android:padding="7dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/kotak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_ib_logout"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/kotak" />
+
+        <ImageButton
+            android:id="@+id/user_ib_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_ib_logout"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="81dp"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/user_ib_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_ib_logout"
+            android:layout_marginTop="81dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/user_ib_home"
+            app:srcCompat="@drawable/hasilvote" />
+        <ImageButton
+            android:id="@+id/user_ib_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_ib_logout"
+            android:layout_marginTop="81dp"
+            android:layout_toRightOf="@+id/user_ib_hasil"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/htm" />
+        <ImageButton
+            android:id="@+id/user_ib_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_ib_logout"
+            android:layout_marginTop="81dp"
+            android:layout_toRightOf="@+id/user_ib_berita"
+            android:layout_marginLeft="40dp"
+            app:srcCompat="@drawable/pilihakun" />
+    </RelativeLayout>
+</ScrollView>
