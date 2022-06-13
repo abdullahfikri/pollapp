@@ -3,6 +3,7 @@ package com.example.vottingapp.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -53,8 +54,10 @@ public class ProfileUserActivity extends AppCompatActivity {
         String statusvoting;
         if (statusVottingInteger == 1) {
             statusvoting = "Sudah Voting";
+            userStatus.setTextColor(Color.GREEN);
         } else {
             statusvoting = "Belum Voting";
+            userStatus.setTextColor(Color.RED);
         }
         String profileImageUrl = user.get("imageUrl");
         userEmail.setText(user.get("email"));

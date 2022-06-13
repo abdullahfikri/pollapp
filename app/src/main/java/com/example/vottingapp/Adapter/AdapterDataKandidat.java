@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,6 +18,7 @@ import com.example.vottingapp.API.APIInterface;
 import com.example.vottingapp.API.RetrofitServer;
 import com.example.vottingapp.Activity.KandidatActivity;
 import com.example.vottingapp.Activity.MenuHasilVotingActivity;
+import com.example.vottingapp.Model.login.Data;
 import com.example.vottingapp.Model.viewkandidat.Datum;
 import com.example.vottingapp.Model.voting.ResponseVoting;
 import com.example.vottingapp.R;
@@ -40,6 +40,7 @@ public class AdapterDataKandidat extends RecyclerView.Adapter<AdapterDataKandida
 public  AdapterDataKandidat(Context ctx, List<Datum> listKandidat) {
         this.ctx = ctx;
         this.listKandidat = listKandidat;
+        sessionUser = new SessionManager(ctx);
     }
 
     @NonNull
@@ -72,7 +73,7 @@ public  AdapterDataKandidat(Context ctx, List<Datum> listKandidat) {
         holder.kandidat_btn_select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sessionUser = new SessionManager(ctx);
+
                 id_user = sessionUser.getUserDetail().get("userId");
 
                 votingPilihan(id, id_user);
@@ -92,6 +93,8 @@ public  AdapterDataKandidat(Context ctx, List<Datum> listKandidat) {
             @Override
             public void onResponse(Call<ResponseVoting> call, Response<ResponseVoting> response) {
                 Toast.makeText(ctx, ""+response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                Data responseVotingData = response.body().getData();
+                sessionUser.createLoginSession(responseVotingData);
             }
 
             @Override

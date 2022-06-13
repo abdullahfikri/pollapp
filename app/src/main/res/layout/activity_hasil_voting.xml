@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_height="match_parent"
-    android:background="@drawable/bgprofilecalon"
     tools:context=".Activity.HasilVoting">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +16,7 @@
             android:layout_height="wrap_content"
             android:text="Hasil Sementara"
             android:textSize="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:textStyle="bold"/>
     </LinearLayout>
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pc_hasilvote"

@@ -85,7 +85,7 @@ public class HasilVoting extends AppCompatActivity {
                 i.setOrientation(Legend.LegendOrientation.VERTICAL);
                 i.setTextSize(12);
                 i.setYOffset(20);
-                i.setTextColor(Color.WHITE);
+                i.setTextColor(Color.BLACK);
                 i.setDrawInside(false);
                 i.setEnabled(true);
             }

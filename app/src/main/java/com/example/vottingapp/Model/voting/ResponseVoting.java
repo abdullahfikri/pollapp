@@ -1,6 +1,8 @@
 package com.example.vottingapp.Model.voting;
 
 import javax.annotation.Generated;
+
+import com.example.vottingapp.Model.login.Data;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -13,6 +15,9 @@ public class ResponseVoting {
     @SerializedName("message")
     @Expose
     private String message;
+    @SerializedName("data")
+    @Expose
+    private Data data;
 
     public String getStatus() {
         return status;
@@ -28,6 +33,14 @@ public class ResponseVoting {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Data getData() {
+        return data;
+    }
+
+    public void setData(Data data) {
+        this.data = data;
     }
 
 }
