@@ -72,7 +72,9 @@ To get a local copy up and running, follow these simple steps:
 
 ## Contact
 
-Muhammad Fikri - [mfikri.dev@gmail.com](mailto:mfikri.dev@gmail.com)
+-   Muhammad Fikri - [mfikri.dev@gmail.com](mailto:mfikri.dev@gmail.com)
+-   Alif Alfarabi. B -
+    [alifalfarabiyt@gmail.com](mailto:alifalfarabiyt@gmail.com)
 
 Project Link:
 
